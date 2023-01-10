@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header, footer {
+  background-color: rgb(5, 5, 141);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h2 ,ul{
+  margin: 0 130px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 154px);
+  padding: 40px;
+  gap: 40px;
+}
+
+main .left {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgba(161, 160, 160, 0.664);
+  padding-right: 20px;
+}
+
+main .left strong {
+  margin: 10px 0;
+}
+
+main .left span {
+  text-align: center;
+}
+
+main .right {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-bottom: 1px solid  rgba(161, 160, 160, 0.664);
+  width: 50%;
+}
+
+main .right a {
+  margin-top: 20px;
+}
+
+main img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #0aa8e6;
+  border-radius: 50% ;
+  padding: 3px;
+}
+
+main img:hover{
+  background: #0aa8e6;
+  box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
+}
+main img:active{
+   background: #000000;
+}
+
+footer {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer, ul, li a{
+  color: azure;
+  list-style: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
